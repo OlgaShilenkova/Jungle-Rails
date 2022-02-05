@@ -1,0 +1,12 @@
+<tr>
+  <td>
+    <%# DO NOT RENDER BECAUSE %>
+    <%# CAN NOT GET ACCESS TO NAME <%= @category.product.name %> %>
+    <%# CAN NOT GET ACCESS TO NAME <%= category.product.name %> %>
+    <%# CAN NOT GET ACCESS TO NAME <%= @category.name %> %>
+    <%# CAN NOT GET ACCESS TO NAME <%= category.name %> %>
+  </td>
+  <td>
+    <%= link_to fa_icon('trash'), [:admin, category], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
+  </td>
+</tr>
