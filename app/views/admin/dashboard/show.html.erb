@@ -1,2 +1,25 @@
 <h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+
+<table class="table">
+  <thead >
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><%= link_to 'Products',  [:admin, :products] %></td>
+      <td><%= @allProducts.count %></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><%= link_to 'Categories' %></td>
+      <td><%= @categories.count %></td>
+    </tr>
+    
+  </tbody>
+</table>
