@@ -47,7 +47,7 @@ RSpec.describe User, type: :model do
       expect(user2.errors.full_messages).to include("Email has already been taken")
     end
 
-    # 7
+    # 8
     it 'is not valid if password is shorter then 6 characters ' do
       user = User.new(first_name: "Peter", last_name: "Smith", email: "TEST@TEST.com ", password: "1234", password_confirmation: "1234")
       user.save
@@ -56,17 +56,39 @@ RSpec.describe User, type: :model do
 
   end 
 
+  describe '.authenticate_with_credentials' do
+
+    user = User.create(first_name: "Peter", last_name: "Smith", email: "test@test.com", password: "123456", password_confirmation: "123456")
+
+    # 9
+    it 'is valid with valid attributes ' do
+      expect(User.authenticate_with_credentials("test@test.com","123456")).to be_truthy
+    end
+
+    # 10  
+    it 'is not valid with wrong email' do
+      expect(User.authenticate_with_credentials("123@test.com","123456")).to be_nil
+    end
+    
+    # 11
+    it 'is not valid with wrong password' do
+      expect(User.authenticate_with_credentials("test@test.com","AAA")).to be_nil
+    end
+
+  end
+
+  describe 'Edge cases' do
+
+    # 12
+    it 'is valid with empty space before or after email' do
+      expect(User.authenticate_with_credentials(" test@test.com ","123456")).to be_truthy
+    end
+    
+    # 13
+    it 'is valid with UPPER or mIX case written email' do
+      expect(User.authenticate_with_credentials("TeSt@test.COM ","123456")).to be_truthy
+    end
+
+  end 
+
 end
-
-# t.string   "first_name"
-# t.string   "last_name"
-# t.string   "email"
-# t.string   "password_digest"
-
-# name: "PocoPhone", price: 49, quantity: 5, category_id: category.id
-
-# :first_name, :last_name, :email, :password, :password_confirmation
-
-# Password can't be blank
-
-# Email, first name, and last name should also be required
