@@ -4,15 +4,20 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
+Main page.
 !["main view"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Main-page-with-sign-in-user.png?raw=true)
 
+Main with sold product
 !["main page, sold product"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Main-page-sold-productes.png?raw=true)
 
+Cart view
+!["Cart view"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/cart-view.png?raw=true)
+
+Empty cart message
 !["empty cart message"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Empty-cart-notification.png?raw=true)
 
+Admin panel
 !["admin page"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Admin-panel.png?raw=true)
-
-!["Cart view"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Screen%20Shot%202022-02-09%20at%207.43.06%20PM.png?raw=true)
 
 ## Dependencies
 
