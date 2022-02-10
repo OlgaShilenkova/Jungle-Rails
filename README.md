@@ -4,13 +4,27 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
-!["main view"]()
+!["main view"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Main-page-with-sign-in-user.png?raw=true)
 
-!["book appointment"](https://github.com/OlgaShilenkova/scheduler/blob/master/docs/book-appointment.png?raw=true)
+!["main page, sold product"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Main-page-sold-productes.png?raw=true)
 
-!["edit or cancel appointment"](https://github.com/OlgaShilenkova/scheduler/blob/master/docs/edit-or-cancel-appointment.png?raw=true)
+!["empty cart message"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Empty-cart-notification.png?raw=true)
 
-!["re-ask befor deletion"](https://github.com/OlgaShilenkova/scheduler/blob/master/docs/reask-befor-deletion.png?raw=true)
+!["admin page"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Admin-panel.png?raw=true)
+
+!["Cart view"](https://github.com/OlgaShilenkova/Jungle-Rails/blob/master/docs/Screen%20Shot%202022-02-09%20at%207.43.06%20PM.png?raw=true)
+
+## Dependencies
+
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL 9.x
+- Stripe
+
+## Stripe Testing
+
+Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
+
+More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Additional Steps for Apple M1 Machines
 
@@ -29,15 +43,3 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
 8. Run `bin/rails s -b 0.0.0.0` to start the server
-
-## Stripe Testing
-
-Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
-
-More information in their docs: <https://stripe.com/docs/testing#cards>
-
-## Dependencies
-
-- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
-- PostgreSQL 9.x
-- Stripe
