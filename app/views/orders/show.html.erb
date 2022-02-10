@@ -25,7 +25,7 @@
     <%= @order.email %>
   </td>
   <td >
-    <%= humanized_money_with_symbol @order.total_cents %>
+    <%= humanized_money_with_symbol @order.total_cents * 10 %>
   </td>
 </tr>
 </tfoot>
